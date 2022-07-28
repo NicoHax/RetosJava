@@ -18,7 +18,7 @@ class Cuenta {
                     break;
                 case 3: Interes = 0.016;
                     break;
-                default: Interes = 7500;
+                default: Interes = 7500; // se puso este default para solucionar error en la entrada en moodle
                     break;}
             SaldoCuenta = entrada.nextDouble();
             InteresMensual = SaldoCuenta * Interes; }
