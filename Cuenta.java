@@ -11,15 +11,14 @@ public class Cuenta {
     }
 
     public double calcular_interes(){
-        double Interes = 0;
+        double Interes;
         switch (TipoCuenta) {
-            case 1: Interes = 0.015;
+            case 1: Interes = 0.015 * this.SaldoCuenta;
                 break;
-            case 2: Interes = 0.017;
+            case 2: Interes = 0.017 * this.SaldoCuenta;
                 break;
-            case 3: Interes = 0.016;
+            case 3: Interes = 0.016 * this.SaldoCuenta;
                 break;
-            default: Interes = 7500;
+            default: Interes = 7500 * this.SaldoCuenta;
                 break;}
-        return Interes = Interes * SaldoCuenta;
-    }}
+        return Float.parseFloat (String.valueOf(Interes));}}
