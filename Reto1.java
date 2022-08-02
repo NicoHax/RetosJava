@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Reto1 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        double Interes = 0, SaldoCuenta, SaldoFinal, Total_Interes = 0, Total_Saldo = 0, InteresMensual;
+        double Interes, SaldoCuenta, SaldoFinal, Total_Interes = 0, Total_Saldo = 0, InteresMensual;
         int CantidadUsuarios = Integer.parseInt(entrada.nextLine()), TipoCuenta;
         long NoCuenta;
         String FechaApertura = null;
