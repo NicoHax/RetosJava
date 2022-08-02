@@ -5,7 +5,6 @@ public class Reto2 {
         String FechaApertura;
         int TipoCuenta;
         double Interes, SaldoCuenta,
-        //input
         NoCuenta = entrada.nextLong();
         FechaApertura = entrada.next();
         TipoCuenta = entrada.nextInt();
