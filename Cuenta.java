@@ -1,15 +1,13 @@
-public class Cuenta {
+public class Cuenta extends Cliente{ //Debe heredar los atributos de la clase Cliente, por eso se usa extends.
     long NoCuenta;
     String FechaApertura;
     int TipoCuenta;
     double SaldoCuenta;
-    public Cuenta (double NoCuenta, String FechaApertura, int TipoCuenta, double SaldoCuenta) {
-        this.NoCuenta = (long) NoCuenta;
+    public Cuenta (long NoCuenta, String FechaApertura, int TipoCuenta, double SaldoCuenta) {
+        this.NoCuenta = NoCuenta;
         this.FechaApertura = FechaApertura;
         this.TipoCuenta = TipoCuenta;
-        this.SaldoCuenta = SaldoCuenta;
-    }
-
+        this.SaldoCuenta = SaldoCuenta;}
     public double calcular_interes(){
         double Interes;
         switch (TipoCuenta) {

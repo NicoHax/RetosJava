@@ -1,7 +1,6 @@
 import java.util.Scanner;
-
 public class Reto1 {
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner entrada = new Scanner(System.in);
         double Interes, SaldoCuenta, SaldoFinal, Total_Interes = 0, Total_Saldo = 0, InteresMensual;
         int CantidadUsuarios = Integer.parseInt(entrada.nextLine()), TipoCuenta;
@@ -30,5 +29,4 @@ public class Reto1 {
             System.out.println(FloatInteresMensual);
             System.out.println(SaldoFinal);}
             System.out.println(Total_Interes);
-            System.out.println(Total_Saldo);
-       }}
+            System.out.println(Total_Saldo);}}
