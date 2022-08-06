@@ -5,11 +5,14 @@ public class Reto2 {
         long NoCuenta;
         String FechaApertura;
         int TipoCuenta;
-        double Interes, SaldoCuenta;
+        double interesCuenta, SaldoCuenta, interes_cuenta;
         NoCuenta = entrada.nextLong();
         FechaApertura = entrada.next();
         TipoCuenta = entrada.nextInt();
         SaldoCuenta = entrada.nextDouble();
+        //Cuenta objeto_cuenta=new Cuenta(10,"2010/10/06/",1,600000);
         Cuenta objetoCuenta = new Cuenta(NoCuenta,FechaApertura, TipoCuenta, SaldoCuenta);
-        Interes = objetoCuenta.calcular_interes();
-        System.out.println(Interes);}}
+        //interes_cuenta = objeto_cuenta.calcular_interes();
+        interesCuenta = objetoCuenta.calcular_interes();
+        //System.out.println(interes_cuenta);
+        System.out.println(interesCuenta);}}
